@@ -1,0 +1,16 @@
+const schemaJsonTodos = {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": ["userId", "id", "title", "completed"],
+        "properties": {
+            "userId": {"type": "integer"},
+            "id": {"type": "integer"},
+            "title": {"type": "string"},
+            "completed": {"type": "boolean"}
+        }
+    }
+};
+
+module.exports = schemaJsonTodos;
